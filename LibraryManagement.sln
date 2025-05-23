@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinePayment", "OnlinePayment\OnlinePayment.csproj", "{BE373DBF-32AC-4FDC-A820-94E06CF9BDE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryCart", "LibraryCart\LibraryCart.csproj", "{D95D745B-5245-4BA0-A982-636A5DE044A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookProduct", "BookProduct\BookProduct.csproj", "{8DF0899B-8741-41CF-905C-B62081755AEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +16,19 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE373DBF-32AC-4FDC-A820-94E06CF9BDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE373DBF-32AC-4FDC-A820-94E06CF9BDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE373DBF-32AC-4FDC-A820-94E06CF9BDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE373DBF-32AC-4FDC-A820-94E06CF9BDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95D745B-5245-4BA0-A982-636A5DE044A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95D745B-5245-4BA0-A982-636A5DE044A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95D745B-5245-4BA0-A982-636A5DE044A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95D745B-5245-4BA0-A982-636A5DE044A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF0899B-8741-41CF-905C-B62081755AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF0899B-8741-41CF-905C-B62081755AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF0899B-8741-41CF-905C-B62081755AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF0899B-8741-41CF-905C-B62081755AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
