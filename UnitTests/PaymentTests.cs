@@ -5,24 +5,17 @@ namespace LibraryTests;
 public class PaymentTests
 {
     [Fact]
-    public void ProcessPayment_ReturnsTrue_AndPrintsOutput()
+    public void ProcessPayment_WithPositiveAmount_ReturnsTrue()
     {
         var payment = new Payment();
-
-        using var sw = new StringWriter();
-        Console.SetOut(sw);
-
-        var result = payment.ProcessPayment(200m);
-
-        Assert.True(result);
-        Assert.Contains("Processing payment of 200", sw.ToString());
+        Assert.True(payment.ProcessPayment(100m));
     }
 
     [Fact]
-    public void TransactionDetails_ReturnsExpectedString()
+    public void GetPaymentMessage_ReturnsCorrectString()
     {
         var payment = new Payment();
-        var details = payment.TransactionDetails();
-        Assert.Equal("Transaction ID: 12345", details);
+        var msg = payment.GetPaymentMessage(100m);
+        Assert.Equal("Processing payment of 100 UAH...", msg);
     }
 }
