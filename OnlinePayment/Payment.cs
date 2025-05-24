@@ -4,15 +4,14 @@ namespace OnlinePayment;
 
 public class Payment : IPayment
 {
+    public bool ProcessPayment(decimal amount)
+    {
+        return amount > 0;
+    }
+
     public string GetPaymentMessage(decimal amount)
     {
         return $"Processing payment of {amount} UAH...";
-    }
-
-    public bool ProcessPayment(decimal amount)
-    {
-        Console.WriteLine($"Processing payment of {amount} UAH...");
-        return true;
     }
 
     public string TransactionDetails() => $"Transaction ID: 12345";
