@@ -8,5 +8,14 @@ public class Cart : ICart
 
     public void AddProduct(IProduct product) => products.Add(product);
     public void RemoveProduct(IProduct product) => products.Remove(product);
-    public void Checkout() => Console.WriteLine("Order has been placed.");
+
+    public string Checkout()
+    {
+        if (products.Count == 0)
+            return "Cart is empty. No order placed.";
+
+        return $"Order has been placed with {products.Count} item(s).";
+    }
+
+    public IReadOnlyList<IProduct> GetProducts() => products.AsReadOnly();
 }
